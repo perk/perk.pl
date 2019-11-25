@@ -1,0 +1,14 @@
+body {
+ padding-top:120px
+}
+footer {
+  margin: 2em;
+}
+
+.font-size-lg {
+  font-size: 1.2rem;
+}
+
+p > code.hljs {
+  display: inline;
+}

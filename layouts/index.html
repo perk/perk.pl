@@ -1,0 +1,80 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div class="container">
+  {{ range where site.RegularPages "Type" "in" site.Params.mainSections}}
+  <div class="page-header" id="banner">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
+        {{ .Summary }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  <div class="page-header" id="banner">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <p class="font-size-lg">
+          <a href="https://github.com/perk" target="_blank">
+            <span class="font-size-lg fab fa-fw fa-github"></span>
+            <span>&nbsp;github.com/perk</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <p class="font-size-lg">
+          <a href="https://slides.com/perk" target="_blank">
+            <span class="far fa-fw fa-sticky-note"></span>
+            <span>&nbsp;slides.com/perk</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <p class="font-size-lg">
+          <a href="https://www.youtube.com/playlist?list=PL0mIVlCmRVMoZV2nTQ61bwH_Mbb0l1BKb" target="_blank">
+            <span class="font-size-lg fab fa-fw fa-youtube"></span>
+            <span>&nbsp;youtube.com/c/MarcinStożek</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <p class="font-size-lg">
+          <a href="https://www.linkedin.com/in/marcin-stozek-perk" target="_blank">
+            <span class="font-size-lg fab fa-fw fa-linkedin"></span>
+            <span>&nbsp;linkedin.com/in/marcin-stozek-perk</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <p class="font-size-lg">
+          <a href="https://keybase.io/perk" target="_blank">
+            <span class="font-size-lg fab fa-fw fa-keybase"></span>
+            <span>&nbsp;keybase.io/perk</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <p class="font-size-lg">
+          <a href="https://twitter.com/marcinstozek" target="_blank">
+            <span class="font-size-lg fab fa-fw fa-twitter"></span>
+            <span>&nbsp;twitter.com/marcinstozek</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

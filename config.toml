@@ -1,0 +1,9 @@
+baseUrl = 'https://perk.pl/'
+CanonifyUrls = true
+languageCode = 'en-us'
+title = 'Marcin Stożek "Perk"'
+disableKinds = ['taxonomy', 'taxonomyTerm']
+
+[params]
+  description = 'The home site of Marcin Stożek "Perk"'
+  mainSections = ["posts", "talks"]

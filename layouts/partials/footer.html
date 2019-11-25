@@ -1,0 +1,23 @@
+  <footer>
+    <div class="container">
+      &copy; Marcin Stożek {{ now.Format "2006" }}
+      <div class="float-lg-right">
+        <a class="font-size-lg fab fa-fw fa-github" href="https://github.com/perk" target="_blank"></a>
+        <a class="font-size-lg far fa-fw fa-sticky-note" href="https://slides.com/perk" target="_blank"></a>
+        <a class="font-size-lg fab fa-fw fa-youtube" href="https://www.youtube.com/playlist?list=PL0mIVlCmRVMoZV2nTQ61bwH_Mbb0l1BKb" target="_blank"></a>
+        <a class="font-size-lg fab fa-fw fa-linkedin" href="https://pl.linkedin.com/in/marcin-sto%C5%BCek-4532a18" target="_blank"></a>
+        <a class="font-size-lg fab fa-fw fa-keybase" href="https://keybase.io/perk" target="_blank"></a>
+        <a class="font-size-lg fab fa-fw fa-twitter" href="https://twitter.com/marcinstozek" target="_blank"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('div code').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
+</body>
+</html>
