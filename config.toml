@@ -1,9 +1,9 @@
 baseUrl = 'https://perk.pl/'
 CanonifyUrls = true
 languageCode = 'en-us'
-title = 'Marcin Stożek "Perk"'
+title = 'Marcin "Perk" Stożek'
 disableKinds = ['taxonomy', 'taxonomyTerm']
 
 [params]
-  description = 'The home site of Marcin Stożek "Perk"'
+  description = 'The home site of Marcin "Perk" Stożek'
   mainSections = ["posts", "talks"]
